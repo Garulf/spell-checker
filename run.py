@@ -6,7 +6,7 @@ sys.path.append(plugindir)
 sys.path.append(os.path.join(plugindir, "lib"))
 sys.path.append(os.path.join(plugindir, "plugin"))
 
-from plugin.main import Dictionary
+from plugin.main import SpellChecker
 
 if __name__ == "__main__":
-    Dictionary()
+    SpellChecker()

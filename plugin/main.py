@@ -6,7 +6,7 @@ from flox.clipboard import Clipboard
 from textblob import Word, TextBlob
 
 
-class Dictionary(Flox, Clipboard):
+class SpellChecker(Flox, Clipboard):
 
     def query(self, query):
         if query == "" or len(query) == 1:
@@ -47,4 +47,4 @@ class Dictionary(Flox, Clipboard):
         self.show_msg(self.name, f"{word} copied to clipboard")
 
 if __name__ == "__main__":
-    Dictionary()
+    SpellChecker()
