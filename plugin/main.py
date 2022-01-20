@@ -11,6 +11,18 @@ class SpellChecker(Flox):
 
     def query(self, query):
         if query == "" or len(query) == 1:
+            clipboard = get()
+            if clipboard is not None:
+                if len(clipboard.split()) == 1:
+                    self.add_item(
+                        title=clipboard,
+                        subtitle="Insert from clipboard",
+                        icon=self.icon,
+                        method=self.change_query,
+                        parameters=[f"{self.user_keyword} {clipboard}"],
+                        dont_hide=True
+                    )
+                    return
             self.add_item(
                 title="Enter anyword to show word suggestions.",
                 icon=self.icon,
