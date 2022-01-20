@@ -1,12 +1,13 @@
 import json
 
 from flox import Flox
-from flox.clipboard import Clipboard
+from flox.clipboard import get, put
 
 from textblob import Word, TextBlob
 
 
-class SpellChecker(Flox, Clipboard):
+class SpellChecker(Flox):
+
 
     def query(self, query):
         if query == "" or len(query) == 1:
@@ -43,7 +44,7 @@ class SpellChecker(Flox, Clipboard):
         pass
 
     def copy_to_clipboard(self, word):
-        self.put(word)
+        put(word)
         self.show_msg(self.name, f"{word} copied to clipboard")
 
 if __name__ == "__main__":
