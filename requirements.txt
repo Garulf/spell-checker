@@ -1,1 +1,2 @@
 git+https://github.com/garulf/flox#egg=flox-lib
+textblob==0.17.1
