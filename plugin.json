@@ -1,12 +1,12 @@
 {
     "ID": "9AFBFD39E52F415E9B900E92EC1133E4",
     "ActionKeyword": "spell",
-    "Name": "Spell Check",
+    "Name": "Spell Checker",
     "Description": "Spell check any word.",
     "Author": "Garulf",
-    "Version": "0.0.1",
+    "Version": "0.0.2",
     "Language": "python",
-    "Website": "https://github.com/Garulf/spell-check",
+    "Website": "https://github.com/Garulf/spell-checker",
     "IcoPath": "./icon.png",
     "ExecuteFileName": "run.py"
 }
