@@ -1,6 +1,8 @@
 # spell-checker
 Quickly get spelling suggestions and word definitions.
 
+Powered by the excellent [TextBlob](https://github.com/sloria/TextBlob) package by [Sloria](https://github.com/sloria).
+
 ## Installation:
 ```
 pm install spell checker
