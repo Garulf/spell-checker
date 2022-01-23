@@ -35,7 +35,7 @@ class SpellChecker(Flox):
                 icon=self.icon,
             )
         else:
-            with open('./plugin/dictionary.json', "r") as f:
+            with open('./plugin/dictionary.json', "r", encoding='utf-8') as f:
                 definitions = json.load(f)
             w = Word(query)
             spell_check = w.spellcheck()
