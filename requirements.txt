@@ -1,2 +1,2 @@
-flox-lib==0.10.0
+flox-lib==0.18.1
 textblob==0.17.1
