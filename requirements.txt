@@ -1,2 +1,4 @@
-flox-lib==0.18.1
+pyflowlauncher==1.2.2
+typing_extensions==4.13.2
 textblob==0.17.1
+nltk==3.9.1
