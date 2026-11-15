@@ -46,7 +46,12 @@ def prompt_results() -> List[Result]:
 
 
 def sentence_results(text: str) -> List[Result]:
-    return [Result(title=spelling.correct(text), subtitle="Copy to clipboard", icon=ICON)]
+    corrected = spelling.correct(text)
+    return [
+        Result(title=corrected, subtitle="Copy to clipboard", icon=ICON).add_action(
+            copy_to_clipboard, [corrected]
+        )
+    ]
 
 
 def word_results(word: str) -> List[Result]:

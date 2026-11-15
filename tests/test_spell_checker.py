@@ -71,6 +71,9 @@ def test_unknown_word_has_empty_definition():
 def test_sentence_is_corrected():
     (result,) = as_json(run(query("I havv goood speling")))
     assert result["Title"] == "I have good spelling"
+    assert result["SubTitle"] == "Copy to clipboard"
+    assert result["JsonRPCAction"]["Method"] == "copy_to_clipboard"
+    assert result["JsonRPCAction"]["Parameters"] == ["I have good spelling"]
 
 
 def test_copy_to_clipboard_copies_and_notifies(invoked):
