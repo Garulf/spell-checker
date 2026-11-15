@@ -1,0 +1,16 @@
+{
+  "keyword": "spell",
+  "query": "I havv goood speling",
+  "icon": "../../data/icon.png",
+  "max_results": 1,
+  "selection": 0,
+  "results": [
+    {
+      "title": "I have good spelling",
+      "subtitle": "Copy to clipboard",
+      "icon": "../../data/icon.png"
+    }
+  ],
+  "query_suggestion": "",
+  "show_caret": false
+}

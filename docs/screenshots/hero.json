@@ -1,0 +1,31 @@
+{
+  "keyword": "spell",
+  "query": "lite",
+  "icon": "../../data/icon.png",
+  "max_results": 4,
+  "selection": 0,
+  "results": [
+    {
+      "title": "like",
+      "subtitle": "",
+      "icon": "../../data/icon.png"
+    },
+    {
+      "title": "life",
+      "subtitle": "The potential principle, or force, by which the organs of animals and plants are started and continued in the performance of their functions.",
+      "icon": "../../data/icon.png"
+    },
+    {
+      "title": "line",
+      "subtitle": "A verse, or the words which form a certain number of feet, according to the rules of poetry.",
+      "icon": "../../data/icon.png"
+    },
+    {
+      "title": "late",
+      "subtitle": "",
+      "icon": "../../data/icon.png"
+    }
+  ],
+  "query_suggestion": "",
+  "show_caret": true
+}
