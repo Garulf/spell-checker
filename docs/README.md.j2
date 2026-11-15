@@ -1,0 +1,75 @@
+{% extends "base.md.j2" %}
+
+{% block usage %}
+## Features
+
+* **Suggestions as you type.** Every likely correction for a misspelled word, best match first.
+* **Definitions.** Each suggestion shows its dictionary definition when there is one.
+* **Whole sentences.** Type more than one word to correct the whole line at once.
+* **Clipboard aware.** Open the plugin with a single word copied and it offers to check it.
+* **Fully local.** Powered by [TextBlob](https://github.com/sloria/TextBlob). No web requests, no API keys.
+
+## Usage
+
+Type `spell` followed by a word, then press `Enter` to copy the suggestion you want:
+
+```
+spell lite
+```
+
+{{ screenshot("suggestions", alt="Spelling suggestions with definitions in Flow Launcher") }}
+
+| Query | Result |
+| --- | --- |
+| `spell <word>` | Suggested spellings, most likely first, with definitions |
+| `spell <sentence>` | The whole sentence with every word corrected |
+| `spell` | Offers the word on your clipboard, if there is exactly one |
+
+### Correct a sentence
+
+Type more than one word and select the result to copy the corrected sentence:
+
+{{ screenshot("sentence", alt="A corrected sentence in Flow Launcher") }}
+
+### Check the word on your clipboard
+
+Copy a single word, type `spell` and press `Enter` to check it:
+
+{{ screenshot("clipboard", alt="Insert the word on the clipboard into the query") }}
+
+## Installation
+
+### Flow Launcher
+
+In Flow Launcher, type:
+
+```
+pm install spell checker
+```
+
+{{ screenshot("install", alt="Flow Launcher plugin manager installing Spell Checker") }}
+
+### Manual installation
+
+Download `spell-checker-<version>.zip` from the [latest release]({{ project.url }}/releases/latest) and unzip it into
+`%appdata%\FlowLauncher\Plugins`, then restart Flow Launcher.
+
+Pre-releases of the next version are published from the open release PR on the
+[releases page]({{ project.url }}/releases) for testing. Flow Launcher won't offer them as updates.
+
+## Requirements
+
+* Flow Launcher 1.17.0 or newer
+* Python 3.8 or newer, which Flow Launcher can install for you
+
+## Changelog
+
+{{ changelog(3) }}
+
+See [CHANGELOG.md](CHANGELOG.md) for the full history.
+{% endblock %}
+
+{% block screenshots %}{% endblock %}
+{% block install %}{% endblock %}
+{% block contributing %}{% endblock %}
+{% block license %}{% endblock %}
